@@ -32,3 +32,22 @@ function conversionUSD() {
 }
 
 // práctica 4
+function calcularAreaPerimetroRectangulo(ancho, altura) {
+    // Calcular área (ancho * altura)
+    const area = ancho * altura;
+    
+    // Calcular perímetro (2*(ancho + altura))
+    const perimetro = 2 * (ancho + altura);
+    
+    // Crear el mensaje con los resultados
+    const resultado = `
+    Dimensiones de la sala:
+    - Ancho: ${ancho} metros
+    - Altura: ${altura} metros
+    
+    Cálculos:
+    - Área: ${area} metros cuadrados
+    - Perímetro: ${perimetro} metros
+    `;
+    return alert(resultado);
+}
