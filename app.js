@@ -10,6 +10,9 @@ function saludarConNombre(nombre) {
 // desafío 3
 function dobledenumero(numero) {
     numero = parseInt(prompt("Ingresa un número:"));
+    if (isNaN(numero)) {
+        return console.log("Por favor ingresa un número válido.");
+    }
     return console.log(`El doble de ${numero} es ${numero * 2}`);
 }
 // desafío 4
@@ -17,12 +20,18 @@ function promedio(a,b,c){
     a = parseFloat(prompt("Ingresa el primer número:"));
     b = parseFloat(prompt("Ingresa el segundo número:"));
     c = parseFloat(prompt("Ingresa el tercer número:"));
+    if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        return console.log("Por favor ingresa números válidos.");
+    }
     return console.log(`El promedio de ${a}, ${b} y ${c} es ${(a + b + c) / 3}`);
 }
 // desafío 5
 function mayorOmenor(a,b){
     a = parseFloat(prompt("Ingresa el primer número:"));
     b = parseFloat(prompt("Ingresa el segundo número:"));
+    if (isNaN(a) || isNaN(b)) {
+        return console.log("Por favor ingresa números válidos.");
+    }
     if (a > b) {
         return console.log(`${a} es mayor que ${b}`);
     } else if (a < b) {
@@ -34,5 +43,8 @@ function mayorOmenor(a,b){
 // desafío 6
 function multiplicarxunomismo(numero) {
     numero = parseInt(prompt("Ingresa un número:"));
+    if (isNaN(numero)) {
+        return console.log("Por favor ingresa un número válido.");
+    }
     return console.log(`El resultado de multiplicar ${numero} por si mismo es ${numero * numero}`);
 }
