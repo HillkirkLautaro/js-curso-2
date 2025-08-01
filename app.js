@@ -16,3 +16,19 @@ function valorFactorial(numero) {
     }
     return alert(`El factorial de ${numero} es ${factorial}`);
 }
+
+// Práctica 3
+function conversionUSD() {
+    const dolares = parseFloat(prompt("Ingresa la cantidad en dólares a convertir:"));
+    
+    if (isNaN(dolares)) {
+        return alert("Por favor ingresa un número válido");
+    }
+
+    const tasaCambio = 4.80;
+    const reales = (dolares * tasaCambio).toFixed(2);
+    
+    return alert(`La conversión de ${dolares} USD a Reales Brasileños es ${reales} BRL`);
+}
+
+// práctica 4
