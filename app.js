@@ -26,7 +26,7 @@ function conversionUSD() {
     }
 
     const tasaCambio = 4.80;
-    const reales = (dolares * tasaCambio).toFixed(2);
+    const reales = (dolares * tasaCambio).toFixed(2); // Convertir a dos decimales
     
     return alert(`La conversión de ${dolares} USD a Reales Brasileños es ${reales} BRL`);
 }
@@ -50,4 +50,31 @@ function calcularAreaPerimetroRectangulo(ancho, altura) {
     - Perímetro: ${perimetro} metros
     `;
     return alert(resultado);
+}
+
+// práctica 5
+function calcularAreaPerimetroCircular(radio) {
+
+    // Solicitar el radio al usuario
+    radio = parseFloat(prompt("Ingresa el radio de la sala circular en metros:"));
+    if (isNaN(radio) || radio <= 0) {
+        return alert("Por favor, ingresa un número válido para el radio.");
+    }
+    const PI = 3.14;
+    
+    // Calcular área (π * r²)
+    const area = PI * Math.pow(radio, 2);
+    
+    // Calcular perímetro/circunferencia (2 * π * r)
+    const perimetro = 2 * PI * radio;
+    
+    // Mostrar resultados en consola
+    resultado=alert(`
+    Sala Circular:
+    - Radio: ${radio} metros
+    - Área: ${area.toFixed(2)} metros cuadrados
+    - Perímetro (circunferencia): ${perimetro.toFixed(2)} metros
+    `);
+    
+    return resultado;
 }
