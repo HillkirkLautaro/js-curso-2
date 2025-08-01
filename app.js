@@ -17,6 +17,10 @@ function promptclick() {
 function suma() {
     var num1 = parseInt(prompt("Ingrese el primer número:"));
     var num2 = parseInt(prompt("Ingrese el segundo número:"));
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Por favor, ingresa números válidos.");
+        return;
+    }
     var resultado = num1 + num2;
     alert(`El resultado de la suma es: ${resultado}`);
 }
