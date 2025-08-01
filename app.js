@@ -78,3 +78,19 @@ function calcularAreaPerimetroCircular(radio) {
     
     return resultado;
 }
+
+// práctica 6
+function tablademultiplicar(numero) {
+    let resultado = "";
+    for (let i = 1; i <= 10; i++) {
+        resultado += `${numero} x ${i} = ${numero * i}\n`;
+    }
+    alert(resultado);
+}
+function calcularTablaMultiplicar() {
+    const numero = parseInt(prompt("Ingresa un número para calcular su tabla de multiplicar:"));
+    if (isNaN(numero)) {
+        return alert("Por favor, ingresa un número válido.");
+    }
+    tablademultiplicar(numero);
+}
