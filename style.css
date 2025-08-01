@@ -16,7 +16,8 @@ main, html {
 
 .container {
   text-align: center;
-  color: #279EFF;
+  background-color: #8a94a1;
+  border-radius: 20px;
 }
 
 .button {

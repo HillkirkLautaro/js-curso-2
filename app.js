@@ -4,6 +4,7 @@ function saludar() {
 }
 // desafío 2
 function saludarConNombre(nombre) {
+    nombre = prompt("Ingresa tu nombre:");
     return console.log(`¡Hola ${nombre}!`);
 }
 // desafío 3
