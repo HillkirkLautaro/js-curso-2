@@ -4,7 +4,7 @@ function calculoIMC(peso, altura) {
     peso = parseFloat(prompt("Ingresa tu peso en kg:"));
     altura = parseFloat(prompt("Ingresa tu altura en metros:"));
     const imc = peso / (altura * altura);
-    return console.log(`Tu IMC es ${imc}`);
+    return alert(`Tu IMC es ${imc}`);
 }
 
 // práctica 2
