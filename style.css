@@ -17,7 +17,7 @@ main, html {
 .container {
   text-align: center;
   background-color: #8a94a1;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 
 .button {

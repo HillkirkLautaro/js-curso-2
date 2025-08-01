@@ -8,3 +8,11 @@ function calculoIMC(peso, altura) {
 }
 
 // práctica 2
+function valorFactorial(numero) {
+    numero = parseInt(prompt("Ingresa un número para calcular su factorial:"));
+    let factorial = 1;
+    for (let i = 1; i <= numero; i++) {
+        factorial *= i;
+    }
+    return alert(`El factorial de ${numero} es ${factorial}`);
+}
