@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Desafíos JS</title>
 </head>
 <body>
-    <header>
-        <h1></h1>
-    </header>
-    <main class="container">
-        <button onclick="consoleclick()" class="button">Console</button>
-        <button onclick="promptclick()" class="button">Alert</button>
-        <button onclick="BrasilQuestion()" class="button">Prompt</button>
-        <button onclick="suma()" class="button">Suma</button>
-    </main>
+  <header>
+    <h1>Desafíos de JavaScript</h1>
+  </header>
 
-      <script src="app.js"></script>
+  <main class="container">
+    <button onclick="mostrarLenguajes()" class="button">Mostrar Lenguajes</button>
+    <button onclick="mostrarInverso(lenguagesDeProgramacion)" class="button">Mostrar Inverso</button>
+    <button onclick="calcularPromedio(JSON.parse(prompt('Ingresa una lista de números (ej: [1,2,3])')))" class="button">Calcular Promedio</button>
+    <button onclick="mostrarMaximoMinimo(JSON.parse(prompt('Ingresa una lista de números (ej: [4,7,1])')))" class="button">Mostrar Máx/Mín</button>
+    <button onclick="console.log('Suma:', sumaLista(JSON.parse(prompt('Ingresa una lista de números (ej: [5,10,15])'))))" class="button">Suma Lista</button>
+    <button onclick="console.log('Posición:', encontrarPosicion(JSON.parse(prompt('Ingresa una lista (ej: [\"a\",\"b\",\"c\"])')), prompt('Elemento a buscar')))" class="button">Encontrar Posición</button>
+    <button onclick="console.log('Suma:', sumarListas(JSON.parse(prompt('Lista 1 (ej: [1,2,3])')), JSON.parse(prompt('Lista 2 (ej: [4,5,6])'))))" class="button">Sumar Listas</button>
+    <button onclick="console.log('Cuadrados:', cuadradosLista(JSON.parse(prompt('Ingresa una lista de números (ej: [2,3,4])'))))" class="button">Cuadrados Lista</button>
+  </main>
+  <description>
+    <h1 class = "description">En la consola están los resultados de los desafíos.</h1>
+    </description>
+  <script src="app.js"></script>
 </body>
 </html>

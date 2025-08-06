@@ -32,3 +32,10 @@ main, html {
 .button:hover {
   background-color: #2980b9;
 }
+
+.description {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
